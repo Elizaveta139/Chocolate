@@ -1,0 +1,130 @@
+:root {
+  --primary: #111;
+  --accent-text: #fd9222;
+  --white-color: #fff;
+  --secondary: rgba(255, 255, 255, 0.7);
+  --additional: rgba(17, 17, 17, 0.7);
+  --light: #fafafa;
+  --form-cl: rgba(255, 255, 255, 0.3);
+
+  --dark-bg: #1e1823;
+  --beige: #fcf1e0;
+
+  --animation: 300ms ease;
+}
+
+/**
+  |============================
+  | Base styles
+  |============================
+*/
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary);
+  background-color: var(--light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style-type: none;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+input {
+  font-family: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+/* Phone screens */
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Tablet screens */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+    padding: 0 16px;
+  }
+}
+
+/* Desktop screens */
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1168px;
+  }
+}
+
+/**
+  |============================
+  | Header
+  |============================
+*/
+
+/* Navigation */
